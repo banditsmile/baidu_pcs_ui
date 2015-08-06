@@ -270,4 +270,8 @@ class baidu_pcs_controller extends base_controller{
         unset($down_status[$file_key]);
         return json_output(0,'success');
     }
+
+	public function setting(){
+		return $this->render('setting_body');
+	}
 }

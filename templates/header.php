@@ -63,7 +63,6 @@
             <ul>
                 <li><a href="<?php echo site_url(array());?>">文件列表</a></li>
                 <li><a href="<?php echo site_url(array('action'=>'download_status'));?>">下载状态</a></li>
-                <li><a href="rollback.html">回滚记录</a></li>
-                <li><a href="release.html">审核发布</a></li>
+                <li><a  href="<?php echo site_url(array('action'=>'setting'));?>">设置</a></li>
             </ul>
         </div>

@@ -22,13 +22,6 @@ class baidu_pcs extends baidu_pcs_sdk{
 
 	}
 
-	public function index(){
-		$result = exec('pcs list',$output,$return);
-		$shell_result = shell_exec('pcs list');
-		$exec_result = array('result'=>$result,'output'=>$output,'return'=>$return);
-		return array('shell_result'=>$shell_result,'exec_result'=>$exec_result);
-	}
-
 	public function context($key=''){
 		$command = 'pcs context';
 		$result = exec($command,$output,$return);
